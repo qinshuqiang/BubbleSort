@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="{{url_for('static', filename='css/cp/website_top.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{url_for('static', filename='css/cp/initial.css')}}" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="{{url_for('static', filename='js/root/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='js/cp/website_top_jq.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='js/root/vue/vue.min.js')}}"></script>
+</head>
+
+<body>
+    <div id="website_top">
+        <div class="fujiafu">
+            <div class="top_welcome">
+                <div class="top_welcome_text">
+                    <a>{{"{{top_weclome_text}}"}}</a>
+                </div>
+            </div>
+            <div class="navigation">
+                <div class="navigation_logo fl">
+                    <img src="/static/img/logo/logo.jpg" alt="" style="height:66px;">
+                </div>
+                <div class="navigation_list fl">
+                    <div class="navigation_a fl">
+                        <a>{{"{{navigation_a_gssy}}"}}</a>
+                    </div>
+                    <div class="navigation_a fl navigation_product">
+                        <a>{{"{{navigation_a_cplb}}"}}</a>
+                        <ul class="navigation_a_mask">
+                            <li class="navigation_product_i" v-for="(item,index) of products" :key="item.id">{{"{{item.name}}"}}</li>
+                        </ul>
+                    </div>
+                    <div class="navigation_a fl">
+                        <a>{{"{{navigation_a_hyzx}}"}}</a>
+                    </div>
+                    <div class="navigation_a fl">
+                        <a>{{"{{navigation_a_qyln}}"}}</a>
+                    </div>
+                    <div class="navigation_a fl">
+                        <a>{{"{{navigation_a_gywm}}"}}</a>
+                    </div>
+                    <div class="navigation_a fl">
+                        <a>{{"{{navigation_a_lxwm}}"}}</a>
+                    </div>
+                    <div class="navigation_a fl">
+                        <img src="/static/img/wechat/01.png" alt="" style="height:33px;margin-left: 250px;">
+                    </div>
+                    <div class="navigation_a fl">
+                        <img src="/static/img/wechat/02.png" alt="" style="height:31px;margin-left:-10px;">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="slide_img">
+                <img class="slide_imgi" src="/static/img/banners/1.jpg" alt="">
+                <img class="slide_imgi" src="/static/img/banners/4.jpg" alt="">
+                <img class="slide_imgi" src="/static/img/banners/5.jpg" alt="">
+
+            </div>
+            <div class="slide_i">
+                <b class="slide_ctrl"></b>
+                <b></b>
+                <b></b>
+            </div>
+        </div>
+        <div class="products">
+            <div class="products_i fl" v-for="(product,index) of products" :key="product.id">
+                <div class="products_phone_case">
+                    <div class="phone_case_text">
+                        <p style="font-size: 25px;">{{"{{product.p_a}}"}}</p>
+                        <p>{{"{{product.p_b}}"}}</p>
+                    </div>
+                    <div class="phone_case_img">
+                        <img :src="product.img" alt="" style="width:270px;;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product_list">
+            <div class="product_list_top">
+                <div product_list_lt>
+                    <h2></h2>
+                </div>
+                <div class="product_list_name">
+                    <div class="product_list_i"></div>
+                </div>
+                <div class="product_list_name">
+                    <div class="product_list_i"></div>
+                </div>
+                <div class="product_list_name">
+                    <div class="product_list_i"></div>
+                </div>
+                <div class="product_list_name">
+                    <div class="product_list_i"></div>
+                </div>
+                <div class="product_list_name">
+                    <div class="product_list_i"></div>
+                </div>
+            </div>
+            <div class="product_list_bottom">
+                <div class="product_list_i">
+                    <div class="product_list_img"></div>
+                    <div class="product_list_n"></div>
+                </div>
+                <div class="product_list_i">
+                    <div class="product_list_img"></div>
+                    <div class="product_list_n"></div>
+                </div>
+                <div class="product_list_i">
+                    <div class="product_list_img"></div>
+                    <div class="product_list_n"></div>
+                </div>
+                <div class="product_list_i">
+                    <div class="product_list_img"></div>
+                    <div class="product_list_n"></div>
+                </div>
+                <div class="product_list_i">
+                    <div class="product_list_img"></div>
+                    <div class="product_list_n"></div>
+                </div>
+                <div class="product_list_i">
+                    <div class="product_list_img"></div>
+                    <div class="product_list_n"></div>
+                </div>
+            </div>
+        </div>
+        <div class="test"></div>
+
+        <script type="text/javascript" src="{{url_for('static', filename='js/cp/website_top_vue.js')}}"></script>
+</body>
+
+</html>

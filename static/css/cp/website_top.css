@@ -1,0 +1,153 @@
+@charset "utf-8";
+/* CSS  */
+
+.fujiafu {
+    font-family: "SimHei";
+    color: #000;
+    z-index: 9;
+    width: 1880px;
+    height: 85px;
+    margin: auto;
+    position: relative;
+    top: 0;
+    text-align: center;
+}
+
+.top_welcome {
+    height: 18px;
+    width: 100%;
+    border-bottom: 0.5px dashed black;
+}
+
+.top_welcome_text {
+    position: relative;
+    left: -540px;
+}
+
+.top_welcome_text a {
+    color: black;
+}
+
+/* 导航栏部分 */
+.navigation {
+    height: 66px;
+    width: 1880px;
+}
+
+.navigation_logo {
+    height: 66px;
+    width: 120px;
+    padding-left: 200px;
+}
+
+.navigation_list {
+    position: relative;
+    left: 100px;
+    ;
+    top: 20px;
+}
+
+.navigation_a {
+    padding-right: 25px;
+    font-size: 21px;
+    background-color: white;
+
+}
+
+.navigation_a_mask>li {
+    display: block;
+    z-index: 99;
+    padding-top: 12px;
+    color: #656565;
+    display: none;
+}
+
+.btn {
+    height: 25px;
+}
+
+/* 幻灯片部分开始 */
+.slide {
+    z-index: 1;
+    width: 1880px;
+    height: 680px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.slide .slide_img>img {
+    width: 1880px;
+    height: 480px;
+    position: absolute;
+    top: 86;
+    left: 0;
+    z-index: 1;
+}
+
+.slide_i b {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: #1f487c;
+    border-radius: 50%;
+    margin: 3px;
+}
+
+.slide .slide_i {
+    width: 200px;
+    height: 14px;
+    position: relative;
+    bottom: -450px;
+    cursor: pointer;
+    margin: auto;
+    z-index: 2;
+}
+
+.test {
+    height: 800px;
+    width: 50px;
+}
+
+.slide_i .slide_ctrl {
+    background-color: black;
+}
+
+/* 产品大类展示图开始 */
+
+.products {
+    position: relative;
+    top: 455px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1500px;
+    height: 300px;
+
+}
+
+.products_img {
+    width: 18%;
+    padding-left: 3px;
+}
+
+.products_i {
+    width: 18%;
+    padding-left: 3px;
+}
+
+.phone_case_text {
+    position: relative;
+    top: 71px;
+    left: 34px;
+}
+.product_list{
+    width: 1500px;
+    height: 900px;
+    position: relative;
+    top: 460px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}

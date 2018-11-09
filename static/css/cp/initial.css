@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,from,fieldset,table,table,td,img,div,dl,dt,dd,input{margin: 0;padding: 0;}
+body{font-size: 12px;}/*字体大小*/
+img{border: none}/*去掉边框*/
+li{list-style: none;}/*去掉原来li的样式*/
+input,select,textarea{outline: none;border: none;background: none;}/*去掉原来的轮廓*/
+textarea{resize: none}/*去掉原来的轮廓*/
+a{text-decoration:none;color: #656565;}/*去掉轮廓*/
+
+/*清浮动*/
+.clearfix:after{content: "";display: block;clear: both;}
+.clearfix{zoom: 1;}
+.fl{float: left;}
+.fr{float: right;}
+
+
